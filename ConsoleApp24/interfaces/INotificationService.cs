@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp24.interfaces
+namespace ConsoleApp24.interfaces;
+
+public interface INotificationService
 {
-    internal class INotificationService
-    {
-    }
+    Task NotifyAsync(string message);
 }

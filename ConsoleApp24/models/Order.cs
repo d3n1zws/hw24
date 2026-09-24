@@ -3,7 +3,7 @@
 using ConsoleApp24.interfaces;
 using ConsoleApp24.records;
 using ConsoleApp24.enums;
-internal class Order: IEntity
+public class Order: IEntity
 {
     private static int _idCounter;
     public int Id { get; }
@@ -18,14 +18,14 @@ internal class Order: IEntity
     {
         return order.TotalAmount;
     }
-    public static implicit operator string(Order order)
-    {
-        return Order.ToString();
-    }
     public override string ToString()
     {
-        return $""
+        return $"Status: {Status}, Customer: {Customer}, Order Date: {OrderDate}";
+    }
+    public static implicit operator string(Order order)
+    {
+        return (string)order.ToString();
     }
 }
-//Implicit / Explicit Operator: Order obyektini decimal-a cast etdikdə TotalAmount-u qaytarmalıdır (Explicit). string-ə cast etdikdə isə sifariş haqqında xülasə mətn qaytarmalıdır (Implicit).
+
 

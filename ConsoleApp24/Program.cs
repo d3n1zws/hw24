@@ -1,25 +1,17 @@
-﻿//using ConsoleApp24.enums;
-//using ConsoleApp24.models;
-//using ConsoleApp24.records;
+﻿using ConsoleApp24.enums;
+using ConsoleApp24.models;
+using ConsoleApp24.records;
 
-//Abstraksiya, İnterfeyslər və Custom Exception-lar
-//Xüsusi İstisnalar:
+using Newtonsoft.Json;
+
+
 //StockUnavailableException(Anbarda kifayət qədər məhsul olmadıqda).
 //OrderNotFoundException(ID - yə görə sifariş tapılmadıqda).
 
 
-//IEntity(Interface): int Id { get; }
-//IOrderService<T>(Generic Interface):
-//Task AddOrderAsync(T order)
-//Task<T> GetOrderByIdAsync(int id)
-//Task ProcessOrdersConcurrentlyAsync()
 //INotificationService(Dependency Injection Tətbiqi üçün):
 //Task NotifyAsync(string message) (Məsələn: EmailNotificationService və ya SmsNotificationService).
 
-
-
-//3. Modeller, Encapsulation, Operators və Indexer
-//Order (Class — implements IEntity):
 
 
 
